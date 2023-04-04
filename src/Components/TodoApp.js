@@ -4,12 +4,11 @@ import Home from '../routes/Home';
 import About from '../routes/About';
 import Login from '../routes/Login';
 import Profile from '../routes/Profile';
-import '../Styles/TodoApp.css'
+import '../Styles/TodoApp.css';
 import NotMatch from '../routes/NotMatch';
 import Layout from './Layout';
 
-const TodoApp = () => {
-  return (
+const TodoApp = () => (
   <Routes>
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
@@ -19,7 +18,6 @@ const TodoApp = () => {
       <Route path="*" element={<NotMatch />} />
     </Route>
   </Routes>
-  );
-};
+);
 
 export default TodoApp;
